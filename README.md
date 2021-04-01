@@ -22,8 +22,8 @@ Ex: ```python3 incrementationIndex.py ./corpusExamenCorrige/complémentaires/```
 
 ### Introduction
 L’objet du projet final consiste à réaliser en python
-● L’indexation ‘incrémentale’ d’un corpus bilingue français / anglais
-● L’interrogation booléenne de ce corpus par mots-clefs
+- L’indexation ‘incrémentale’ d’un corpus bilingue français / anglais
+- L’interrogation booléenne de ce corpus par mots-clefs
 
 Alors, avant de commencer nous vous précisons que dans notre dossier vous trouverez: (nom de dossier souligné)
 - corpusExamenCorrige
