@@ -2,18 +2,18 @@
         Instruction d'exécution du projet
          Siyu Wang et Natia Davitashvili
 -------------------------------------------------
-# Pour installer les outils requis : (modules: langdetect, six, et treetaggerwrapper)
+### Pour installer les outils requis : (modules: langdetect, six, et treetaggerwrapper)
 ```pip3 install -r requirements.txt```
 
-# Pour indexer un dossier :
+### Pour indexer un dossier :
 ```python3 indexerDocuments.py <chemin de dossier>```
 Ex: ```python3 incrementationIndex.py ./corpusExamenCorrige/initiaux/```
 
-# Pour incrémentation d'indexation d'un autre dossier :
+### Pour incrémentation d'indexation d'un autre dossier :
 ```python3 incrementationIndex.py <chemin de dossier>```
 Ex: ```python3 incrementationIndex.py ./corpusExamenCorrige/complémentaires/```
 
-# Pour faire la requête :
+### Pour faire la requête :
 ```python3 requetesCorpus.py```
 
 ## Projet pour le cours « Acquisition,modélisation des connaissances»
@@ -58,10 +58,9 @@ un avec l’id d’article comme une clé et le titre du document comme une vale
 un avec l’id d’article comme une clé et un dictionnaire des fréquences comme une valeur, 
 et puis un (pour chaque langue) avec le terme comme clé et un dictionnaire d’article id et sa fréquence comme valeur.
 
-Tous les fonctions communes utilisées par les 3 scripts ​indexerDocuments.py​, incrementationIndex.py​, et ​requetesCorpus.py​ sont stockées dans le script nommé traitementCummun.py​ comme un module pour effectuer : gestion de fichiers txt, traitement treetagger, lemmatisation, tokenisation, mise en minuscule, suppression de signes de ponctuations, lecture et écriture du format json, etc. Sachant que les jeux de tags sont différents selon les langues, nous avons utilisé donc langue.detect en python. Alors on obtient des fichiers d’index au format json dans le dossier ​./documentsIndexes​. 
+Tous les fonctions communes utilisées par les 3 scripts ​indexerDocuments.py​, incrementationIndex.py​, et ​requetesCorpus.py​ sont stockées dans le script nommé traitementCummun.py​ comme un module pour effectuer : gestion de fichiers txt, traitement treetagger, lemmatisation, tokenisation, mise en minuscule, suppression de signes de ponctuations, lecture et écriture du format json, etc. Sachant que les jeux de tags sont différents selon les langues, nous avons utilisé donc langue.detect en python. Alors on obtient des fichiers d’index au format json dans le dossier ./documentsIndexes. 
 
-Pour l’incrémentation d'indexation d'un autre dossier on utilise le script suivant :```python3 incrementationIndex.py <chemin de dossier>``` ​ 
-​comme ceci :```python3 incrementationIndex.py corpusExamenCorrige/initiaux```
+Pour l’incrémentation d'indexation d'un autre dossier on utilise le script suivant :```python3 incrementationIndex.py <chemin de dossier>``` comme ceci :```python3 incrementationIndex.py corpusExamenCorrige/initiaux```
 
 Si dans le corpus complémentaire il y a un fichier qui se trouve dans la liste des documents déjà indexés, on ne le traite pas pour éviter la répétition d’indexation; alors que s’il n’est pas dans la liste, on l’indexe et mettre à jour les fichiers json d’indexation. Dans le terminal il y aura des messages affichés si le document est indexé ou pas. C’est justement pour cet objetif qu’on a ce script.
 
@@ -73,7 +72,7 @@ Au total, nous avons 5 fichiers sauvegardés :
 4) index_par_document_fr.json – un fichier d’indexation de document -> termes. Pour chaque id du document, nous listons tous les termes du document avec leur fréquence (français).
 5) index_par_document_en.json – un fichier d’indexation de document -> termes. Pour chaque id du document, nous listons tous les termes du document avec leur fréquence (anglais). Les 5 fichiers se trouvent dans le dossier sous le nom « ​ **documentsIndexes** ​ » du dossier principal « Projet ».
 
-​### Deuxième partie : Requête par mots-clés
+### Deuxième partie : Requête par mots-clés
 Pour effectuer les requêtes on lance le script suivant : ```python3 requetesCorpus.py```
 Et on saisi le choix de langue pour la requête, puis les mots clés.
 
