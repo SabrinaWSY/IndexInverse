@@ -26,15 +26,15 @@ L’objet du projet final consiste à réaliser en python
 ● L’interrogation booléenne de ce corpus par mots-clefs
 
 Alors, avant de commencer nous vous précisons que dans notre dossier vous trouverez: (nom de dossier souligné)
-o​ ​corpusExamenCorrige
-o​ ​documentsIndexes
-o​ ​indexerDocuments.py
-o​ ​incrementationIndex.py
-o​ ​requirements.txt
-o​ ​requetesCorpus.py
-o​ ​traitementCommun.py
-o​ ​readme.txt
-o​ ​Rapport.pdf
+- corpusExamenCorrige
+- documentsIndexes
+- indexerDocuments.py
+- incrementationIndex.py
+- requirements.txt
+- requetesCorpus.py
+- traitementCommun.py
+- readme.txt
+- Rapport.pdf
 L’importance de chaque éléments de cette liste sera évoquée dans les propos suivants.
 
 ### Corpus
