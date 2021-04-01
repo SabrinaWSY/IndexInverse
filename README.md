@@ -16,7 +16,7 @@ Ex: ```python3 incrementationIndex.py ./corpusExamenCorrige/complémentaires/```
 ### Pour faire la requête :
 ```python3 requetesCorpus.py```
 
-## Projet pour le cours « Acquisition,modélisation des connaissances»
+# Projet pour le cours « Acquisition et modélisation des connaissances»
 
 ### Auteurs: Siyu Wang et Natia DAVITASHVILI
 
